@@ -1,0 +1,189 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../logos/limpieza.jpg);
+    background-size: 100%;
+}header{
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../logos/limpieza.jpg);
+}
+/* imagen logo */
+.imagen-logo{
+    width: 5%;
+    height: auto;
+    border-radius: 63px;
+    
+}
+     /* link ul */
+.links{
+    display: flex;
+    margin: 0 14px;
+    padding: 0 ;
+    font-family: cursive;
+    list-style: none;
+     justify-content: end;
+}
+.links li{
+    display: flex;
+    margin: 15px 0px 5px 15px;  
+    padding: 0 ;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+      /* banners varios */
+.banner{
+    background-image: url(../logos/Papeles.jpeg);
+    height: 150px;
+    text-align: center;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    margin: 5px 0;
+}
+/* titulo pagina principal */
+h1{
+    font-family: cursive;
+    font-size: 2.5rem;
+    color: #F5EEDD;
+    text-align: center;
+}
+.p-red{
+    font-family: cursive;
+    font-size: 2rem;
+    color:  #E78B48;
+}
+/* informacion local|contacto */
+.local{
+    background-image: url(../logos/nuestro-local.jpg);
+    height: 150px;
+    text-align: center;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    background-color: #BB3E00;
+}
+.local h1{
+    text-shadow: 17px 1px 9px rgba(0,0,0,0.71);
+    color: white;
+    font-size: 2.5rem;
+}
+.local h2{
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    color:white;
+    font-size: 1.5rem;
+}
+/* promo imagenes ,texto pagina principal */
+.promocion{
+   text-align: center;
+   font-family: cursive;
+    font-size: 2rem;
+    color: orange;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+.promo-papel{
+    border-radius: 13px 13px 13px 13px;
+-webkit-border-radius: 13px 13px 13px 13px;
+-moz-border-radius: 13px 13px 13px 13px;
+background: #158cba;
+border: 2px inset #1c0e0c;
+width: 20%;
+}
+    /* parrafo | contactos */
+.local p{
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    color: white;
+    font-size: 1.5rem;
+}
+      /* formulario de ventas */
+iframe{
+    width: 25%;
+}
+/* formilario de ventas */
+.ventas-formulario{
+    background-image: url(../logos/papel-ventas.jfif);
+    width: auto;
+    height: 320px;
+    margin: auto;
+}
+.ventas-formulario h2{
+    color: #DDEB9D;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 60px;
+}
+.ventas-formulario input{
+    color: black;
+    margin: 240px 0 3000px 0;
+}
+.ventas-formulario label{
+    color: white;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+        /* mayoristas */
+        
+.mayoristas h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    font-family: cursive;
+    margin: 0 0 20px 0;
+}
+.amigo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.amigo img{
+    width: 32%;
+    margin: 0 5px 0 5px;
+    border-radius: 13px 13px 13px 13px;
+} 
+       /* catalogo masivo */
+.masivo-papel{
+    width: 32%;
+    margin: 0 5px 0 5px;
+    border-radius: 13px 13px 13px 13px;
+}
+     /* envios al interior */
+main img{
+   
+    width: 32%;
+    margin: 0 5px 0 5px;
+    border-radius: 13px 13px 13px 13px;
+}
+main h2{
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    font-family: cursive;
+}
+
+
+        /* pie de paginas */
+footer{
+    background-color: #BB3E00;
+    
+    padding: 10px 0;
+    color: white;
+    font-size: 1.2rem;
+    font-family: cursive;
+}
+/* pie de pagina redes sociales */
+.redes{
+    width: 5%;
+    border-radius: 50px;
+}
