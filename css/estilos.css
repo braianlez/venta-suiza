@@ -1,0 +1,675 @@
+/* responsive */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header header img {
+    width: 20%;
+    height: auto;
+    border-radius: 63px;
+  }
+  header nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /* pagina principal */
+  .promocion {
+    grid-template-areas: "titulo" "texto1" "papel1" "texto3" "papel3" "texto2" "papel2";
+    grid-template-columns: 1fr;
+    grid-template-areas: 70px repeat(5, 190px) 220px;
+  }
+  .promocion .promocion img {
+    width: 80%;
+    height: 90%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .promocion span h2 {
+    font-size: 1.2rem;
+  }
+  /* index contacto */
+  div iframe {
+    width: 50%;
+  }
+  /* index ventas */
+  label {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  .footer-ventas {
+    margin-top: 10%;
+  }
+  /* index mayoristas */
+  .mayoristas {
+    grid-template-areas: "cabeza" "precio1" "mayo1" "precio2" "mayo2" "precio3" "mayo3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 150px 450px 150px 450px;
+  }
+  /* index masivo */
+  .masivo {
+    grid-template-areas: "higienico" "masivo1" "catalogo1" "masivo2" "catalogo2" "masivo3" "catalogo3" "masivo4" "catalogo4" "rollo" "masivo5" "catalogo5" "masivo6" "catalogo6" "masivo7" "catalogo7" "masivo8" "catalogo8";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 150px 450px 150px 450px 150px 450px 150px 450px 150px 150px;
+  }
+}
+/* table */
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4ED7F1;
+  background-size: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(../logos/limpieza.jpg);
+  /* imagen logo */
+}
+header .imagen-logo {
+  width: 5%;
+  height: auto;
+  border-radius: 63px;
+}
+header nav {
+  width: 60%;
+  margin: 0;
+  padding: 0;
+}
+header nav ul {
+  display: flex;
+  margin: 0 14px;
+  padding: 0;
+  font-family: cursive;
+  list-style: none;
+  justify-content: center;
+}
+header nav ul li {
+  display: flex;
+  margin: 15px 0px 5px 15px;
+  padding: 0;
+  text-decoration: none;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* banners varios */
+.banner {
+  background-image: url(../logos/Papeles.jpeg);
+  height: 150px;
+  text-align: center;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  margin: 0;
+  /* titulo pagina principal */
+}
+.banner h1 {
+  font-family: cursive;
+  font-size: 2.5rem;
+  color: #F5EEDD;
+}
+.banner .p-red {
+  font-family: cursive;
+  font-size: 2rem;
+  color: #E78B48;
+}
+
+.local {
+  background-image: url(../logos/nuestro-local.jpg);
+  height: 150px;
+  text-align: center;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  background-color: #BB3E00;
+}
+.local h1 {
+  text-shadow: 17px 1px 9px rgba(0, 0, 0, 0.71);
+  color: white;
+  font-size: 2.5rem;
+}
+.local h2 {
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 1.5rem;
+}
+.local p {
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* ubicacion contacto */
+iframe {
+  margin-left: 25%;
+}
+
+/* grid pagina principal */
+.promocion img {
+  width: 80%;
+  height: 80%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.promocion h2 {
+  color: #E78B48;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  padding: 0 0 10px 0;
+}
+
+.promocion {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "texto1 papel3 texto2" "papel1 papel3 papel2" "papel1 texto3 papel2";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 80px 120px repeat(2, 200px);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.texto1 {
+  grid-area: texto1;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+.texto3 {
+  grid-area: texto3;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+.texto2 {
+  grid-area: texto2;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  height: 120px;
+  padding: 20px 15px 30px 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.papel1 {
+  grid-area: papel1;
+  margin: 5px 10px 0 0px;
+}
+
+.papel3 {
+  grid-area: papel3;
+}
+
+.papel2 {
+  grid-area: papel2;
+}
+
+/* formilario de ventas */
+.ventas-formulario {
+  background-image: url(../logos/papel-ventas.jfif);
+  width: auto;
+  height: 320px;
+  margin: auto;
+}
+.ventas-formulario h2 {
+  color: #DDEB9D;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 60px;
+}
+.ventas-formulario input {
+  color: black;
+  margin: 240px 0 3000px 0;
+}
+.ventas-formulario label {
+  color: white;
+  font-size: 1.5rem;
+  font-family: cursive;
+}
+
+.footer-ventas {
+  margin-top: 7%;
+}
+
+/* compras mayoristas */
+.mayoristas h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-family: cursive;
+  margin: 0 0 20px 0;
+}
+
+.mayoristas img {
+  width: 90%;
+  height: 90%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.mayoristas {
+  display: grid;
+  grid-template-areas: "cabeza cabeza cabeza" "precio1 mayo2 precio3" "mayo1 mayo2 mayo3" "mayo1 precio2 mayo3";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 80px 170px repeat(2, 250px);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.cabeza {
+  grid-area: cabeza;
+}
+
+.mayo1 {
+  grid-area: mayo1;
+}
+
+.mayo2 {
+  grid-area: mayo2;
+}
+
+.mayo3 {
+  grid-area: mayo3;
+}
+
+.precio1 {
+  grid-area: precio1;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 50px;
+}
+
+.precio2 {
+  grid-area: precio2;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 10px;
+}
+
+.precio3 {
+  grid-area: precio3;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 50px 0 50px;
+}
+
+/* catalogo masivo */
+.masivo img {
+  width: 80%;
+  height: 80%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.masivo h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-family: cursive;
+  margin: 0 0 20px 0;
+}
+
+.masivo {
+  display: grid;
+  grid-template-areas: "higienico higienico higienico higienico" "masivo1 catalogo2 masivo3 catalogo4" "catalogo1 catalogo2 catalogo3 catalogo4" "catalogo1 masivo2 catalogo3 masivo4" "rollo rollo rollo rollo" "catalogo5 masivo6 catalogo7 masivo8" "catalogo5 catalogo6 catalogo7 catalogo8" "masivo5 catalogo6 masivo7 catalogo8";
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: repeat(8, 200px);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.higienico {
+  grid-area: higienico;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+.catalogo1 {
+  grid-area: catalogo1;
+}
+
+.catalogo2 {
+  grid-area: catalogo2;
+}
+
+.catalogo3 {
+  grid-area: catalogo3;
+}
+
+.catalogo4 {
+  grid-area: catalogo4;
+}
+
+.catalogo5 {
+  grid-area: catalogo5;
+}
+
+.catalogo6 {
+  grid-area: catalogo6;
+}
+
+.catalogo7 {
+  grid-area: catalogo7;
+}
+
+.catalogo8 {
+  grid-area: catalogo8;
+}
+
+.masivo1 {
+  grid-area: masivo1;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+.masivo2 {
+  grid-area: masivo2;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+.masivo3 {
+  grid-area: masivo3;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+.masivo4 {
+  grid-area: masivo4;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+.masivo5 {
+  grid-area: masivo5;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+.masivo6 {
+  grid-area: masivo6;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+.masivo7 {
+  grid-area: masivo7;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+.masivo8 {
+  grid-area: masivo8;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+.rollo {
+  grid-area: rollo;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+/* envios al interior */
+main img {
+  width: 32%;
+  margin: 0 5px 0 5px;
+  border-radius: 13px 13px 13px 13px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+  background-image: url(../logos/fondo.jpg);
+  font-family: cursive;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  padding: 0 0 0 5px;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-family: cursive;
+}
+
+main h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-family: cursive;
+}
+
+/* index envios al interior */
+.camion-envio {
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* pie de paginas */
+footer {
+  background-color: #BB3E00;
+  padding: 10px 0;
+  color: white;
+  font-size: 1.2rem;
+  font-family: cursive;
+}
+
+/* pie de pagina redes sociales */
+.redes {
+  width: 5%;
+  border-radius: 50px;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header header img {
+    width: 20%;
+    height: auto;
+    border-radius: 63px;
+  }
+  header nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /* pagina principal */
+  .promocion {
+    grid-template-areas: "titulo" "texto1" "papel1" "texto3" "papel3" "texto2" "papel2";
+    grid-template-columns: 1fr;
+    grid-template-areas: 70px repeat(5, 190px) 220px;
+  }
+  .promocion .promocion img {
+    width: 80%;
+    height: 90%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .promocion span h2 {
+    font-size: 1.2rem;
+  }
+  /* index contacto */
+  div iframe {
+    width: 50%;
+  }
+  /* index ventas */
+  label {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  .footer-ventas {
+    margin-top: 10%;
+  }
+  /* index mayoristas */
+  .mayoristas {
+    grid-template-areas: "cabeza" "precio1" "mayo1" "precio2" "mayo2" "precio3" "mayo3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 150px 450px 150px 450px;
+  }
+  /* index masivo */
+  .masivo {
+    grid-template-areas: "higienico" "masivo1" "catalogo1" "masivo2" "catalogo2" "masivo3" "catalogo3" "masivo4" "catalogo4" "rollo" "masivo5" "catalogo5" "masivo6" "catalogo6" "masivo7" "catalogo7" "masivo8" "catalogo8";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 150px 450px 150px 450px 150px 450px 150px 450px 150px 150px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

@@ -1,86 +1,114 @@
-/* reset */
 
+@use"./partials/variables";
+
+
+
+@use "./partials/mobile";
+
+
+/* reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    background-image: url(../logos/limpieza.jpg);
+    background-color:#4ED7F1;
     background-size: 100%;
-}header{
-    background-color: orange;
+
+}
+
+header{
     display: flex;
     justify-content: space-between;
     background-image: url(../logos/limpieza.jpg);
-}
-/* imagen logo */
-.imagen-logo{
-    width: 5%;
-    height: auto;
-    border-radius: 63px;
+    /* imagen logo */
+    .imagen-logo{
+                 width: 5%;
+                 height: auto;
+                 border-radius: 63px;
     
-}
-     /* link ul */
-.links{
-    display: flex;
-    margin: 0 14px;
-    padding: 0 ;
-    font-family: cursive;
-    list-style: none;
-     justify-content: end;
-}
-.links li{
-    display: flex;
-    margin: 15px 0px 5px 15px;  
-    padding: 0 ;
-    text-decoration: none;
-}
-a{
-    text-decoration: none;
-}
-nav{
-    width: 60%;
-    margin: 0;
-    padding: 0;
-}
-      /* banners varios */
+                }
+            nav{
+                     width: 60%;
+                     margin: 0;
+                     padding: 0;
+
+                         ul{
+                             display: flex;
+                             margin: 0 14px;
+                             padding: 0 ;
+                             font-family: cursive;
+                             list-style: none;
+                             justify-content: center;
+          
+                                 li{ 
+                                     display: flex;
+                                     margin: 15px 0px 5px 15px;  
+                                     padding: 0 ;
+                                     text-decoration: none;
+                                     text-decoration: none;
+                                     justify-content: center;
+                                     align-items: center;        
+                                     }
+                             }
+             }
+        }
+    a{
+        text-decoration: none;
+    }
+      
+         //sectiom
+                                          /* banners varios */
 .banner{
     background-image: url(../logos/Papeles.jpeg);
     height: 150px;
     text-align: center;
     text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
-    margin: 5px 0;
+    margin: 0;
+    /* titulo pagina principal */
+        h1{
+             font-family: cursive;
+             font-size: 2.5rem;
+             color: #F5EEDD;
+            }
+
+        .p-red{
+             font-family: cursive;
+             font-size: 2rem;
+              color:  #E78B48;
+             } 
+
+            
 }
-/* titulo pagina principal */
-h1{
-    font-family: cursive;
-    font-size: 2.5rem;
-    color: #F5EEDD;
-    text-align: center;
-}
-.p-red{
-    font-family: cursive;
-    font-size: 2rem;
-    color:  #E78B48;
-}
-/* informacion local|contacto */
+
 .local{
-    background-image: url(../logos/nuestro-local.jpg);
-    height: 150px;
-    text-align: center;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
-    background-color: #BB3E00;
+             background-image: url(../logos/nuestro-local.jpg);
+             height: 150px;
+             text-align: center;
+             text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+             background-color: #BB3E00;
+
+        h1{
+             text-shadow: 17px 1px 9px rgba(0,0,0,0.71);
+             color: white;
+             font-size: 2.5rem;
+            }
+        h2{
+             text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+             color:white;
+             font-size: 1.5rem;
+            }   
+             p{
+                 text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+                 color: white;
+                 font-size: 1.5rem;
+             }
 }
-.local h1{
-    text-shadow: 17px 1px 9px rgba(0,0,0,0.71);
-    color: white;
-    font-size: 2.5rem;
-}
-.local h2{
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
-    color:white;
-    font-size: 1.5rem;
+      /* ubicacion contacto */
+iframe{
+    margin-left: 25%;
 }
 /* grid pagina principal */
 .promocion img{
@@ -100,7 +128,6 @@ h1{
     padding: 0 0 10px 0;
    
 }
-
 .promocion{
     display: grid;
     grid-template-areas: 
@@ -175,62 +202,49 @@ h1{
 .papel2{
     grid-area: papel2;
 }
-
-    /* parrafo | contactos */
-.local p{
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
-    color: white;
-    font-size: 1.5rem;
-}
-      /* ubicacion contacto */
-iframe{
-    margin-left: 25%;
-}
-
 /* formilario de ventas */
 .ventas-formulario{
-    background-image: url(../logos/papel-ventas.jfif);
-    width: auto;
-    height: 320px;
-    margin: auto;
+             background-image: url(../logos/papel-ventas.jfif);
+             width: auto;
+             height: 320px;
+             margin: auto;
+ 
+             h2{
+                 color: #DDEB9D;
+                  text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+                 text-align: center;
+                 font-size: 2.5rem;
+                 padding-top: 60px;
+            }
+            input{
+                 color: black;
+                 margin: 240px 0 3000px 0;
+            }
+                 label{
+                 color: white;
+                 font-size: 1.5rem;
+                 font-family: cursive;
+            }
 }
 
-.ventas-formulario h2{
-    color: #DDEB9D;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
-    text-align: center;
-    font-size: 2.5rem;
-    padding-top: 60px;
-}
-.ventas-formulario input{
-    color: black;
-    margin: 240px 0 3000px 0;
-}
-.ventas-formulario label{
-    color: white;
-    font-size: 1.5rem;
-    font-family: cursive;
-}
 .footer-ventas{
     margin-top: 7%;
 }
-
-        /* compras mayoristas */
-        
+ /* compras mayoristas */ 
 .mayoristas h2{
-    font-size: 2.5rem;
-    text-align: center;
-    color: white;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
-    font-family: cursive;
-    margin: 0 0 20px 0;
+                 font-size: 2.5rem;
+                 text-align: center;
+                 color: white;
+                 text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+                 font-family: cursive;
+                 margin: 0 0 20px 0;
 }
 .mayoristas img{
-    width: 90%;
-    height: 90%;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                 width: 90%;
+                 height: 90%;
+                 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .mayoristas{
     display: grid;
@@ -300,9 +314,9 @@ font-family: cursive;
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-padding: 0 50px 0 50px;}
-
-      /* catalogo masivo */
+padding: 0 50px 0 50px;
+}
+  /* catalogo masivo */
 
 .masivo img{
         width: 80%;
@@ -331,7 +345,7 @@ padding: 0 50px 0 50px;}
         "catalogo5 catalogo6 catalogo7 catalogo8"
         "masivo5 catalogo6 masivo7 catalogo8" ;
         
-        grid-template-columns: 22,5% 22,5% 22,5% 22,5%;
+        grid-template-columns: 25% 25% 25% 25%;
     
         grid-template-rows: repeat(8, 200px) ;
         justify-content: center;
@@ -494,7 +508,7 @@ padding: 0 50px 0 50px;}
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     padding: 0 0 0 5px;
 }
-    /* envios al interior */
+/* envios al interior */
 main img{
    
     width: 32%;
@@ -508,16 +522,30 @@ main img{
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    padding: 0 0 0 5px;
+      padding: 0 0 0 5px;
+            
 }
-main h2{
-    font-size: 2.5rem;
-    text-align: center;
-    color: white;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
-    font-family: cursive;
-}
+main h1{
+                 font-size: 2.5rem;
+                 text-align: center;
+                 color: white;
+                 text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+                 font-family: cursive;
+                }
 
+main h2{
+                 font-size: 2.5rem;
+                 text-align: center;
+                 color: white;
+                 text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+                 font-family: cursive;
+}
+/* index envios al interior */
+
+.camion-envio{
+    width: 50%;
+    margin-left: 25%;
+}
 
         /* pie de paginas */
 footer{
@@ -533,107 +561,96 @@ footer{
     width: 5%;
     border-radius: 50px;
 }
-    /* responsive */
-@media(max-width:480px ){
-header{
+
+/* responsive */
+@media (max-width: 480px) {
+  header {
     flex-direction: column;
     align-items: center;
-}
-header img{
+  }
+  header header img {
     width: 20%;
     height: auto;
     border-radius: 63px;
-}
-nav{
+  }
+  header nav {
     width: 100%;
     margin: 0;
     padding: 0;
-}
-/* pagina principal */
-span h2{ 
-    font-size: 1.2rem;
-}
-.promocion{
+  }
+  /* pagina principal */
+  .promocion {
     grid-template-areas: 
-    "titulo"
+    "titulo" 
     "texto1"
     "papel1"
     "texto3"
     "papel3"
     "texto2"
-    "papel2" ;
+    "papel2";
     grid-template-columns: 1fr;
-    grid-template-rows: 70px repeat(5,190px) 220px;
-}
-.promocion img{
+    grid-template-areas: 70px repeat(5, 190px) 220px;
+  }
+  .promocion .promocion img {
     width: 80%;
     height: 90%;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
-       /* index contacto */
-div iframe{
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .promocion span h2 {
+    font-size: 1.2rem;
+  }
+  /* index contacto */
+  div iframe {
     width: 50%;
-}
-    /* index ventas */
-label{
+  }
+  /* index ventas */
+  label {
     display: none;
-}
-input{
+  }
+  input {
     display: none;
-}
-
-.footer-ventas{
+  }
+  .footer-ventas {
     margin-top: 10%;
-
-}
-/* index mayoristas */
-.mayoristas{
+  }
+  /* index mayoristas */
+  .mayoristas {
     grid-template-areas: 
-    "cabeza"
+    "cabeza" 
     "precio1"
-    "mayo1"
-    "precio2"
-    "mayo2"
+    "mayo1" 
+    "precio2" 
+    "mayo2" 
     "precio3"
     "mayo3";
     grid-template-columns: 1fr;
     grid-template-rows: 120px 150px 450px 150px 450px;
-   
-}
-/* index masivo */
-.masivo{
+  }
+  /* index masivo */
+  .masivo {
     grid-template-areas: 
-    "higienico"
+    "higienico" 
     "masivo1"
-    "catalogo1"
-    "masivo2"
-    "catalogo2"
-    "masivo3"
+    "catalogo1" 
+    "masivo2" 
+    "catalogo2" 
+    "masivo3" 
     "catalogo3"
-    "masivo4"
+    "masivo4" 
     "catalogo4"
-    "rollo"
-    "masivo5"
+    "rollo" 
+    "masivo5" 
     "catalogo5"
-    "masivo6"
-    "catalogo6"
-    "masivo7"
+    "masivo6" 
+    "catalogo6" 
+    "masivo7" 
     "catalogo7"
-    "masivo8"
+    "masivo8" 
     "catalogo8";
     grid-template-columns: 1fr;
-    grid-template-rows:120px 150px 450px 150px 450px 150px 450px 150px 450px 150px 150px ;
-}
-/* index envios al interior */
-.camion-envio{
-    width: 50%;
-    margin-left: 25%;
-}
+    grid-template-rows: 120px 150px 450px 150px 450px 150px 450px 150px 450px 150px 150px;
+  }
 }
 
-       /* table */
-@media(min-width:481) and (max-width:769){
-
-}  
