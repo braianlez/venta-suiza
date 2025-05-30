@@ -1,0 +1,320 @@
+/* responsive */
+
+@media(max-width:480px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+
+
+        header img {
+            width: 20%;
+            height: auto;
+            border-radius: 63px;
+        }
+
+        nav {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+    }
+
+    /* pagina principal */
+
+
+
+    .promocion {
+        grid-template-areas:
+            "titulo"
+            "texto1"
+            "papel1"
+            "texto3"
+            "papel3"
+            "texto2"
+            "papel2";
+        grid-template-columns: 1fr;
+        grid-template-areas: 70px repeat(5, 190px) 220px;
+
+        img {
+            width: 80%;
+            height: 90%;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        span h2 {
+            font-size: 1.2rem;
+        }
+    }
+
+    /* index contacto */
+
+    div iframe {
+        width: 50%;
+    }
+
+    /* index ventas */
+
+    label {
+        display: none;
+    }
+
+    input {
+        display: none;
+    }
+
+    .footer-ventas {
+        margin-top: 10%;
+
+    }
+
+    /* index mayoristas */
+
+    .mayoristas {
+        grid-template-areas:
+            "cabeza"
+            "precio1"
+            "mayo1"
+            "precio2"
+            "mayo2"
+            "precio3"
+            "mayo3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 150px 450px 150px 450px;
+
+    }
+
+    /* index masivo */
+
+    .masivo {
+        grid-template-areas:
+            "higienico"
+            "masivo1"
+            "catalogo1"
+            "masivo2"
+            "catalogo2"
+            "masivo3"
+            "catalogo3"
+            "masivo4"
+            "catalogo4"
+            "rollo"
+            "masivo5"
+            "catalogo5"
+            "masivo6"
+            "catalogo6"
+            "masivo7"
+            "catalogo7"
+            "masivo8"
+            "catalogo8";
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 150px 450px 150px 450px 150px 450px 150px 450px 150px 150px;
+    }
+    /*envios internacionales */
+    .inter-arriba {
+        grid-template-areas:
+            "inter"
+            "arriba2"
+            "arriba1"
+            "arriba3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0px 100px 210px 210px;
+    }
+    .inter-abajo {
+        grid-template-areas:
+            "abajo2"
+            "abajo1"
+            "abajo3";
+        grid-template-columns: 1fr;
+        grid-template-rows:100px 210px 210px;
+    }
+    .inter{
+        margin: 10%;
+    }
+    .arriba1{
+        margin: 0 0 0 50%;
+    }
+    .arriba2{
+        margin: 0 0 0 50%;
+    }
+    .arriba3{
+        margin: 0 0 0 50%;
+    }
+    .abajo1{
+        margin: 10% 0 0 50%;
+    }
+    .abajo2{
+        margin: 0 0 0 50%;
+    }
+    .abajo3{
+        margin: 0 0 0 50%;
+    }
+    
+}
+
+/* table */
+@media(min-width:481px) and (max-width:768px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+
+
+        header img {
+            width: 20%;
+            height: auto;
+            border-radius: 63px;
+        }
+
+        nav {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+    }
+
+    /* pagina principal */
+
+
+
+    .promocion {
+        grid-template-areas:
+            "titulo"
+            "texto1"
+            "papel1"
+            "texto3"
+            "papel3"
+            "texto2"
+            "papel2";
+        grid-template-columns: 1fr;
+        grid-template-areas: 70px 400px 500px repeat(4, 190px) 220px;
+
+        img {
+            width: 90%;
+            height: 90%;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        span h2 {
+            font-size: 1.2rem;
+        }
+    }
+
+    /* index contacto */
+
+    div iframe {
+        width: 50%;
+    }
+
+    /* index ventas */
+
+    label {
+        display: none;
+    }
+
+    input {
+        display: none;
+    }
+
+    .footer-ventas {
+        margin-top: 10%;
+
+    }
+
+    /* index mayoristas */
+
+    .mayoristas {
+        grid-template-areas:
+            "cabeza"
+            "precio1"
+            "mayo1"
+            "precio2"
+            "mayo2"
+            "precio3"
+            "mayo3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 150px 900px 150px 900px;
+
+    }
+    .inpu1{
+             display: table;
+             width: 50%;
+             height: 50%;
+             border-radius: 5px;
+             border: 1px solid #ccc;
+             font-size: 1.2rem;
+             color: #222831;  
+            }
+           
+
+    /* index masivo */
+
+    .masivo {
+        grid-template-areas:
+            "higienico"
+            "masivo1"
+            "catalogo1"
+            "masivo2"
+            "catalogo2"
+            "masivo3"
+            "catalogo3"
+            "masivo4"
+            "catalogo4"
+            "rollo"
+            "masivo5"
+            "catalogo5"
+            "masivo6"
+            "catalogo6"
+            "masivo7"
+            "catalogo7"
+            "masivo8"
+            "catalogo8";
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 150px 800px 150px 800px 150px 800px 150px 800px 150px 150px;
+    }
+    /*envios internacionales */
+    .inter-arriba {
+        grid-template-areas:
+            "inter"
+            "arriba2"
+            "arriba1"
+            "arriba3";
+        grid-template-columns: 1fr;
+        grid-template-rows: 0 220px 280px 230px;
+    }
+    .inter-abajo {
+        grid-template-areas:
+            "abajo2"
+            "abajo1"
+            "abajo3";
+        grid-template-columns: 1fr;
+        grid-template-rows:220px 200px 330px;
+    }
+    .inter{
+        margin: 10%;
+    }
+    .arriba1{
+        margin: 0 0 0 50%;
+    }
+    .arriba2{
+        margin: 0 0 0 50%;
+    }
+    .arriba3{
+        margin: 0 0 0 50%;
+    }
+    .abajo1{
+        margin: 10% 0 0 50%;
+    }
+    .abajo2{
+        margin: 0 0 0 50%;
+    }
+    .abajo3{
+        margin: 0 0 0 50%;
+    }
+    
+}

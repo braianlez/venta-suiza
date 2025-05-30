@@ -1,43 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Suiza Cleaner conoce nuestro local- El mejor papel higiénico y productos de limpieza al mejor precio.">
+    <meta name="keywords" content="contacto,ventas,ubicacion,local">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+        <link rel="icon" href="../logos/logo.ico">
     <title>contacto</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
-                        <!-- encabezado -->
-    <header>
-         <img src="../logos/logo.jpeg" alt="" class="imagen-logo">
-     <nav>
-         <ul class="links">
-             <li><a href="../pages/ventas.html">ventas</a></li>
-             <li><a href="../pages/mayoristas.html">compras mayoristas</a></li>
-             <li><a href="../pages/catalogomasivo.html">catalogo masivo</a></li>
-             <li><a href="../pages/enviosalinterior.html">envios al inteiror</a></li>
-             <li><a href="../index.html">volver</a></li>
-        </ul>
-     </nav> 
+    <!-- menu de navegacion -->
+    <nav class="navbar bg-primary fixed-top hambur">
+        <div class="container-fluid">
+            <img src="../logos/logo.jpeg" alt="imagen logo suiza" width="4%" height="4%" class="imagen-logo ">
+            <h1>suiza cleaner</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">suiza cleaner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ventas.html">ventas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/mayoristas.html">compras mayoristas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/catalogomasivo.html">catalogo masivo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/enviosinternacionales.html">envios internacionales</a>
+                        </li>
+                        <li>
+                            <a href="../index.html">volver</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
     </header>
     <main>
-        <section class="local">                    <!-- contactar -->
-         <h1 >contactar</h1>   
-         <h2>nuestro local</h2>
-         <p>av siempre viva 123</p>
+        <section class="local"> <!-- contactar -->
+            <h1>contactar</h1>
+            <h2>nuestro local</h2>
+            <p>av siempre viva 123</p>
         </section>
-     <div>
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d421120.7682990974!2d-58.92118758246871!3d-34.45199551739889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc95874c5f32d%3A0xe6eae433d07a3d57!2sav%20siempre%20viva!5e0!3m2!1ses!2sar!4v1742990795898!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div>
-    </main> 
- <footer class="footer-contacto">
-    <img src="../logos/whatsapp.jpg" alt="" class="redes">
-    <img src="../logos/facebook.png" alt="" class="redes">
-    <img src="../logos/instagram.png" alt="" class="redes">
-    <div>
-    seguinos en nuestras redes 
-    </div>
-</footer>  
-    
+       
+    </main>
+    <section>
+        <div class="form_register">
+
+            <h2> CONSULTANOS </h2>
+
+
+
+            <form action="contact.php" method="post" enctype="multipart/form-data" name="frm" id="frm"
+                onsubmit="return Verificar()" novalidate="novalidate">
+
+                <div id="input_name" class="col-md-12">
+                    <input id="name" class="form-control" type="text" name="nombre" placeholder="Nombre y Apellido">
+                </div>
+
+                <div id="input_email" class="col-md-12">
+                    <input id="email" class="form-control" type="text" name="e_mail" placeholder="Email">
+                </div>
+
+                <div id="input_phone" class="col-md-12">
+                    <input id="phone" class="form-control" type="text" name="tel_numero" placeholder="Teléfono">
+                </div>
+
+                <div id="input_localidad" class="col-md-12">
+                    <input id="localidad" class="form-control" type="text" name="localidad" placeholder="Localidad">
+                </div>
+
+
+
+                <div id="input_message" class="col-md-12">
+                    <textarea id="comments" class="form-control" name="mensaje" rows="6"
+                        placeholder="Comentario"></textarea>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="g-recaptcha" data-sitekey="6LfFHu0iAAAAAKuzvGoFeHgb9HuOGWpRxd6C4ZMJ">
+                        <div style="width: 304px; height: 78px;">
+                            <section>
+                                <iframe title="reCAPTCHA" width="304" height="78" role="presentation"
+                                    name="a-sp2d8yso23jl" frameborder="0" scrolling="no"
+                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfFHu0iAAAAAKuzvGoFeHgb9HuOGWpRxd6C4ZMJ&amp;co=aHR0cHM6Ly9hcm9tZXMuY29tLmFyOjQ0Mw..&amp;hl=es-419&amp;v=X-oVtzDcTGjZVms4LEgykmCV&amp;size=normal&amp;cb=wlj6brn2vo1d">
+
+                                </iframe>
+                            </section>
+                            <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                        </div>
+                         <iframe 
+                             style="display: none;">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div id="form_register_btn" class="text-center">
+                    <input class="btn btn-primary btn-lg" type="submit" value="Enviar" id="submit">
+                </div>
+
+
+
+            </form>
+
+
+
+        </div>
+         <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d421120.7682990974!2d-58.92118758246871!3d-34.45199551739889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc95874c5f32d%3A0xe6eae433d07a3d57!2sav%20siempre%20viva!5e0!3m2!1ses!2sar!4v1742990795898!5m2!1ses!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+    <footer class="footer-contacto">
+        <img src="../logos/whatsapp.jpg" alt="logo de whatsapp" class="redes">
+        <img src="../logos/facebook.png" alt="logo de facebook">
+        <img src="../logos/instagram.png" alt="logo de instagram">
+        <div>
+             <p>seguinos en nuestras redes</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+        integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

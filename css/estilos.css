@@ -1,63 +1,3 @@
-/* responsive */
-@media (max-width: 480px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-  header header img {
-    width: 20%;
-    height: auto;
-    border-radius: 63px;
-  }
-  header nav {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  /* pagina principal */
-  .promocion {
-    grid-template-areas: "titulo" "texto1" "papel1" "texto3" "papel3" "texto2" "papel2";
-    grid-template-columns: 1fr;
-    grid-template-areas: 70px repeat(5, 190px) 220px;
-  }
-  .promocion .promocion img {
-    width: 80%;
-    height: 90%;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  }
-  .promocion span h2 {
-    font-size: 1.2rem;
-  }
-  /* index contacto */
-  div iframe {
-    width: 50%;
-  }
-  /* index ventas */
-  label {
-    display: none;
-  }
-  input {
-    display: none;
-  }
-  .footer-ventas {
-    margin-top: 10%;
-  }
-  /* index mayoristas */
-  .mayoristas {
-    grid-template-areas: "cabeza" "precio1" "mayo1" "precio2" "mayo2" "precio3" "mayo3";
-    grid-template-columns: 1fr;
-    grid-template-rows: 120px 150px 450px 150px 450px;
-  }
-  /* index masivo */
-  .masivo {
-    grid-template-areas: "higienico" "masivo1" "catalogo1" "masivo2" "catalogo2" "masivo3" "catalogo3" "masivo4" "catalogo4" "rollo" "masivo5" "catalogo5" "masivo6" "catalogo6" "masivo7" "catalogo7" "masivo8" "catalogo8";
-    grid-template-columns: 1fr;
-    grid-template-rows: 120px 150px 450px 150px 450px 150px 450px 150px 450px 150px 150px;
-  }
-}
-/* table */
 /* reset */
 * {
   margin: 0;
@@ -66,7 +6,8 @@
 }
 
 body {
-  background-color: #4ED7F1;
+  background-color: #2722c3;
+  background: linear-gradient(0deg, rgb(39, 34, 195) 0%, rgb(253, 187, 45) 100%);
   background-size: 100%;
 }
 
@@ -74,20 +15,15 @@ header {
   display: flex;
   justify-content: space-between;
   background-image: url(../logos/limpieza.jpg);
-  /* imagen logo */
-}
-header .imagen-logo {
-  width: 5%;
-  height: auto;
-  border-radius: 63px;
+  /*nav varios*/
 }
 header nav {
   width: 60%;
   margin: 0;
   padding: 0;
+  justify-items: end;
 }
 header nav ul {
-  display: flex;
   margin: 0 14px;
   padding: 0;
   font-family: cursive;
@@ -104,8 +40,22 @@ header nav ul li {
   align-items: center;
 }
 
+.hambur {
+  width: 100%;
+}
+.hambur h1 {
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  color: white;
+}
+.hambur .imagen-logo {
+  width: 5%;
+  height: auto;
+  border-radius: 63px;
+}
+
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* banners varios */
@@ -114,18 +64,13 @@ a {
   height: 150px;
   text-align: center;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
-  margin: 0;
-  /* titulo pagina principal */
-}
-.banner h1 {
-  font-family: cursive;
-  font-size: 2.5rem;
-  color: #F5EEDD;
+  margin: 65px 0 20px 0;
 }
 .banner .p-red {
   font-family: cursive;
   font-size: 2rem;
   color: #E78B48;
+  padding: 50px;
 }
 
 .local {
@@ -134,6 +79,7 @@ a {
   text-align: center;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
   background-color: #BB3E00;
+  margin: 79px 0 20px 0;
 }
 .local h1 {
   text-shadow: 17px 1px 9px rgba(0, 0, 0, 0.71);
@@ -154,6 +100,22 @@ a {
 /* ubicacion contacto */
 iframe {
   margin-left: 25%;
+}
+
+.form_register {
+  width: 100%;
+  background: rgba(120, 120, 120, 0.75);
+  margin: 0 auto;
+  padding: 20px 20px 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 47%;
+  margin: 5% 25%;
+}
+
+.col-md-12 {
+  margin: 0 0 20px 0;
 }
 
 /* grid pagina principal */
@@ -226,7 +188,7 @@ iframe {
   background-image: url(../logos/fondo.jpg);
   font-family: cursive;
   height: 120px;
-  padding: 20px 15px 30px 20px;
+  padding: 20px 15px 110px 20px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -250,7 +212,7 @@ iframe {
   background-image: url(../logos/papel-ventas.jfif);
   width: auto;
   height: 320px;
-  margin: auto;
+  margin-top: 79px;
 }
 .ventas-formulario h2 {
   color: #DDEB9D;
@@ -259,14 +221,38 @@ iframe {
   font-size: 2.5rem;
   padding-top: 60px;
 }
-.ventas-formulario input {
-  color: black;
-  margin: 240px 0 3000px 0;
+
+.call-center {
+  margin: 3% 32% 3% 32%;
 }
-.ventas-formulario label {
+
+.asesor {
+  margin: 3% 3%;
+  border-radius: 13px 13px 13px 12px;
+  -webkit-border-radius: 13px 13px 13px 12px;
+  -moz-border-radius: 13px 13px 13px 12px;
+  border: 4px solid #1c0e0c;
+}
+
+.form-control {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.form-floating {
+  width: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+.form-floating label {
   color: white;
   font-size: 1.5rem;
-  font-family: cursive;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
 
 .footer-ventas {
@@ -274,6 +260,57 @@ iframe {
 }
 
 /* compras mayoristas */
+.banner h1 {
+  margin-top: 75px;
+  font-family: cursive;
+  font-size: 2rem;
+  padding: 50px;
+}
+
+.mayo-msj h3 {
+  font-size: 1.5rem;
+  text-align: start;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-family: cursive;
+  margin: 1% 0 1% 33%;
+  display: flex;
+  justify-content: start;
+}
+.mayo-msj textarea {
+  width: 34%;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #222831;
+  margin-left: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mayo-msj .inpu1 {
+  width: 10%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  color: #222831;
+  margin: 1% 0 1% 47%;
+  padding: 10px;
+}
+.mayo-msj .inpu2 {
+  width: 10%;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
+  color: #222831;
+  margin-left: 0;
+  padding: 10px;
+}
+
 .mayoristas h2 {
   font-size: 2.5rem;
   text-align: center;
@@ -283,12 +320,30 @@ iframe {
   margin: 0 0 20px 0;
 }
 
+p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #222831;
+  font-family: cursive;
+  padding: 0% 0 20px 0;
+}
+
 .mayoristas img {
   width: 90%;
   height: 90%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.contac {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .mayoristas {
@@ -559,20 +614,97 @@ iframe {
   padding: 0 0 0 5px;
 }
 
-/* envios al interior */
-main img {
-  width: 32%;
-  margin: 0 5px 0 5px;
-  border-radius: 13px 13px 13px 13px;
-  -webkit-border-radius: 13px 13px 13px 12px;
-  -moz-border-radius: 13px 13px 13px 12px;
-  border: 4px solid #1c0e0c;
-  background-image: url(../logos/fondo.jpg);
+/* envios internacionales */
+.inter-arriba {
+  display: grid;
+  grid-template-areas: "arriba1 arriba1 arriba2" "arriba1 arriba1 arriba3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 200px);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 70%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.arriba1 {
+  grid-area: arriba1;
+  width: 100%;
+  margin-left: 33%;
+  border-radius: 15px;
+}
+
+.arriba2 {
+  grid-area: arriba2;
+  width: 100%;
+  font-size: 1.7srem;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
   font-family: cursive;
+  margin: 0 0 20px 300px;
+}
+
+.arriba3 {
+  grid-area: arriba3;
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-family: cursive;
+  margin: 0 0 100px 300px;
+}
+
+.inter img {
+  width: 80%;
+  height: 80%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 0 0 0 5px;
+}
+
+.inter-abajo {
+  display: grid;
+  grid-template-areas: "abajo1 abajo1 abajo2" "abajo1 abajo1 abajo3";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 200px);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 70%;
+  max-width: 100vw;
+  box-sizing: border-box;
+}
+
+.abajo1 {
+  grid-area: abajo1;
+  width: 100%;
+  margin-left: 33%;
+  border-radius: 15px;
+}
+
+.abajo2 {
+  grid-area: abajo2;
+  width: 100%;
+  font-size: 1.7srem;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-family: cursive;
+  margin: 0 0 20px 300px;
+}
+
+.abajo3 {
+  grid-area: abajo3;
+  width: 100%;
+  font-size: 1.2rem;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  font-family: cursive;
+  margin: 0 0 100px 300px;
 }
 
 main h1 {
@@ -581,20 +713,16 @@ main h1 {
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
   font-family: cursive;
+  margin-top: 5%;
+  padding-top: 3%;
 }
 
-main h2 {
+h2 {
   font-size: 2.5rem;
   text-align: center;
   color: white;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
   font-family: cursive;
-}
-
-/* index envios al interior */
-.camion-envio {
-  width: 50%;
-  margin-left: 25%;
 }
 
 /* pie de paginas */
@@ -606,10 +734,32 @@ footer {
   font-family: cursive;
 }
 
+footer p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #222831;
+  font-family: cursive;
+  padding: 0% 0 20px 0;
+}
+
+footer img {
+  width: 5%;
+  height: auto;
+  border-radius: 63px;
+  flex-direction: row;
+  margin: 0 1% 1% 1%;
+}
+
 /* pie de pagina redes sociales */
 .redes {
+  margin-left: 40%;
   width: 5%;
   border-radius: 50px;
+}
+
+.bocaa {
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+  color: white;
 }
 
 /* responsive */
@@ -634,7 +784,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: 70px repeat(5, 190px) 220px;
   }
-  .promocion .promocion img {
+  .promocion img {
     width: 80%;
     height: 90%;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -669,6 +819,138 @@ footer {
     grid-template-areas: "higienico" "masivo1" "catalogo1" "masivo2" "catalogo2" "masivo3" "catalogo3" "masivo4" "catalogo4" "rollo" "masivo5" "catalogo5" "masivo6" "catalogo6" "masivo7" "catalogo7" "masivo8" "catalogo8";
     grid-template-columns: 1fr;
     grid-template-rows: 120px 150px 450px 150px 450px 150px 450px 150px 450px 150px 150px;
+  }
+  /*envios internacionales */
+  .inter-arriba {
+    grid-template-areas: "inter" "arriba2" "arriba1" "arriba3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0px 100px 210px 210px;
+  }
+  .inter-abajo {
+    grid-template-areas: "abajo2" "abajo1" "abajo3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 210px 210px;
+  }
+  .inter {
+    margin: 10%;
+  }
+  .arriba1 {
+    margin: 0 0 0 50%;
+  }
+  .arriba2 {
+    margin: 0 0 0 50%;
+  }
+  .arriba3 {
+    margin: 0 0 0 50%;
+  }
+  .abajo1 {
+    margin: 10% 0 0 50%;
+  }
+  .abajo2 {
+    margin: 0 0 0 50%;
+  }
+  .abajo3 {
+    margin: 0 0 0 50%;
+  }
+}
+/* table */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header header img {
+    width: 20%;
+    height: auto;
+    border-radius: 63px;
+  }
+  header nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  /* pagina principal */
+  .promocion {
+    grid-template-areas: "titulo" "texto1" "papel1" "texto3" "papel3" "texto2" "papel2";
+    grid-template-columns: 1fr;
+    grid-template-areas: 70px 400px 500px repeat(4, 190px) 220px;
+  }
+  .promocion img {
+    width: 90%;
+    height: 90%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .promocion span h2 {
+    font-size: 1.2rem;
+  }
+  /* index contacto */
+  div iframe {
+    width: 50%;
+  }
+  /* index ventas */
+  label {
+    display: none;
+  }
+  input {
+    display: none;
+  }
+  .footer-ventas {
+    margin-top: 10%;
+  }
+  /* index mayoristas */
+  .mayoristas {
+    grid-template-areas: "cabeza" "precio1" "mayo1" "precio2" "mayo2" "precio3" "mayo3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 150px 900px 150px 900px;
+  }
+  .inpu1 {
+    display: table;
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.2rem;
+    color: #222831;
+  }
+  /* index masivo */
+  .masivo {
+    grid-template-areas: "higienico" "masivo1" "catalogo1" "masivo2" "catalogo2" "masivo3" "catalogo3" "masivo4" "catalogo4" "rollo" "masivo5" "catalogo5" "masivo6" "catalogo6" "masivo7" "catalogo7" "masivo8" "catalogo8";
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 150px 800px 150px 800px 150px 800px 150px 800px 150px 150px;
+  }
+  /*envios internacionales */
+  .inter-arriba {
+    grid-template-areas: "inter" "arriba2" "arriba1" "arriba3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0 220px 280px 230px;
+  }
+  .inter-abajo {
+    grid-template-areas: "abajo2" "abajo1" "abajo3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px 200px 330px;
+  }
+  .inter {
+    margin: 10%;
+  }
+  .arriba1 {
+    margin: 0 0 0 50%;
+  }
+  .arriba2 {
+    margin: 0 0 0 50%;
+  }
+  .arriba3 {
+    margin: 0 0 0 50%;
+  }
+  .abajo1 {
+    margin: 10% 0 0 50%;
+  }
+  .abajo2 {
+    margin: 0 0 0 50%;
+  }
+  .abajo3 {
+    margin: 0 0 0 50%;
   }
 }
 
